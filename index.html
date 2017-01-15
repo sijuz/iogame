@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Подслушка медиа</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+</head>
+<body id="body" class="body1">
+    <div id="row">
+        <div id="mobile" onclick="Flogo()"></div>
+    <div id="block">
+        <div id="logo" onclick="Flogo()"></div>
+        <div class="btn" id="l1" onclick="Fl1();">Акции</div>
+        <div class="btn" id="l2" onclick="Fl2();">Прайс лист</div>
+        <div class="btn" id="l3" onclick="Fl3();">Группы</div>
+        <div class="btn" id="l4" onclick="Fl4();">Контакты</div>
+    
+    </div>
+            <div id="sl1" class="sll">
+                <h1>Акция до 31.12.16</h1>
+                <p>1 рекламный пост - от 200 руб.<br>7 рекламных постов - от 600 руб.<br>В любых сообщесвах из списка 
+                <a onclick="Fl3();">Клик</a></p>
+            </div>
+        
+        
+        
+            <div id="sl2" class="sll">
+                <h1>Прайс на рекламу в сообществах</h1>
+                <p></p>
+            </div>
+        
+        
+        
+            <div id="sl3" class="sll">
+                <h1>Список наших сообществ</h1>
+                <p class="uu1"><a class="sss" id="sss1" href="https://vk.com/sp.posad" target="_blank"></a><a class="sls" href="https://vk.com/sp.posad" target="_blank">Подслушка | Сергиев Посад</a><br>
+                <a class="uuu">21 000 участников</a></p>
+                
+                <p class="uu1"><a class="sss" id="sss2" href="https://vk.com/novosti_sp" target="_blank"></a><a class="sls" href="https://vk.com/novosti_sp" target="_blank">Отдам Даром | Сергиев Посад</a><br>
+                <a class="uuu">13 000 участников</a></p>
+                
+                <p class="uu1"><a class="sss" id="sss3" href="https://vk.com/sarrafann" target="_blank"></a><a class="sls" href="https://vk.com/sarrafann" target="_blank">Срафанное радио | Сергиев Посад</a><br>
+                <a class="uuu">6 000 участников</a></p>
+            </div>
+        
+        
+        
+            <div id="sl4" class="sll">
+                <h1>Контакты</h1>
+                <p>Написать администрутору ВКонтакте:<br><a href="https://vk.com/id343294797" target="_blank">vk.com/id343294797</a> </p>
+            </div>
+        
+        
+        
+</div>
+    <script>
+        var a = 0;
+        var b = 0;
+        var N = document.getElementById('blockN');
+        var block = document.getElementById('block');
+        var logo = document.getElementById('logo');
+        var l1 = document.getElementById('sl1');
+        var l2 = document.getElementById('sl2');
+        var l3 = document.getElementById('sl3');
+        var l4 = document.getElementById('sl4');
+        var lolo = document.getElementsByClassName('btn');
+        var bodyS = document.getElementById('body');
+        
+        function Fl1() {
+            block.style = 'transition: left .5s; left: 0em;';
+            l1.style = "opacity: 1; z-index: 10";
+            l2.style = "opacity: 0; z-index: 0";
+            l3.style = "opacity: 0; z-index: 0";
+            l4.style = "opacity: 0; z-index: 0";
+            bodyS.classList.add('body2');
+            bodyS.classList.remove('body1');
+            bodyS.classList.remove('body3');
+            bodyS.classList.remove('body4');
+            bodyS.classList.remove('body5');
+        }
+        function Fl2() {
+            block.style = 'transition: left .5s; left: 0em;';
+            l1.style = "opacity: 0; z-index: 0";
+            l2.style = "opacity: 1; z-index: 10";
+            l3.style = "opacity: 0; z-index: 0";
+            l4.style = "opacity: 0; z-index: 0";
+            bodyS.classList.add('body3');
+            bodyS.classList.remove('body1');
+            bodyS.classList.remove('body2');
+            bodyS.classList.remove('body4');
+            bodyS.classList.remove('body5');
+        }
+        function Fl3() {
+            block.style = 'transition: left .5s; left: 0em;';
+            l1.style = "opacity: 0; z-index: 0";
+            l2.style = "opacity: 0; z-index: 0";
+            l3.style = "opacity: 1; z-index: 10";
+            l4.style = "opacity: 0; z-index: 0";
+            bodyS.classList.add('body4');
+            bodyS.classList.remove('body1');
+            bodyS.classList.remove('body3');
+            bodyS.classList.remove('body2');
+            bodyS.classList.remove('body5');
+        }
+        function Fl4() {
+            block.style = 'transition: left .5s; left: 0em;';
+            l1.style = "opacity: 0; z-index: 0";
+            l2.style = "opacity: 0; z-index: 0";
+            l3.style = "opacity: 0; z-index: 0";
+            l4.style = "opacity: 1; z-index: 10";
+            bodyS.classList.add('body5');
+            bodyS.classList.remove('body1');
+            bodyS.classList.remove('body3');
+            bodyS.classList.remove('body4');
+            bodyS.classList.remove('body2');
+        }
+        function Flogo() {
+            block.style = 'transition: left .5s;';
+            l1.style = "opacity: 0; z-index: 0";
+            l2.style = "opacity: 0; z-index: 0";
+            l3.style = "opacity: 0; z-index: 0";
+            l4.style = "opacity: 0; z-index: 0";
+            bodyS.classList.add('body1');
+            bodyS.classList.remove('body2');
+            bodyS.classList.remove('body3');
+            bodyS.classList.remove('body4');
+            bodyS.classList.remove('body5');
+        }
+    
+    </script>
+    
+    
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
+
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 70719848, {});
+</script>
+    
+</body>
+</html>

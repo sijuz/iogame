@@ -1,0 +1,206 @@
+@font-face {
+    font-family: eurofurce;
+    src: url(eurofurce.ttf);
+}
+body {
+    margin: 0;
+    font-family: eurofurce, sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #fff;
+    transition: all .3s;
+}
+.body1 {
+    background: url(6.jpg);
+    background-position: 0 80%;
+    background-size: 100% 100%;
+}
+.body2 {
+    background: url(2.jpg);
+    background-position: 0 80%;
+    background-size: 100% 100%;
+}
+.body3 {
+    background: url(3.jpg);
+    background-position: 0 80%;
+    background-size: 100% 100%;
+}
+.body4 {
+    background: url(4.jpg);
+    background-position: 0 80%;
+    background-size: 100% 100%;
+}
+.body5 {
+    background: url(5.jpg);
+    background-position: 0 80%;
+    background-size: 100% 100%;
+}
+h1 {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+a {
+    color: #fff;
+}
+#row {
+    background: rgba(16, 16, 16, 0.3);
+    width: 100%;
+    height: 100%;
+}
+#block {
+    width: 18em;
+    height: 100%;
+    background: rgba(16, 16, 16, 0.4);
+    left: calc(50% - 9em);
+    transition: all .3s;
+    position: absolute;
+    z-index: 2;
+    position: fixed;
+
+}
+.btn {
+    width: 100%;
+    height: 8.5%;
+    text-align: center;
+    padding-top: 10%;
+    color: #fff;
+    font-size: 2em;
+    transition: all .3s;
+}
+.btn:hover {
+    cursor: pointer;
+    font-size: 2.9em;
+    transition: all .3s;
+}
+#logo {
+    height: 37%;
+    background-image: url(1.png);
+    background-size: 8em;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s;
+}
+#logo:hover {
+    cursor: pointer;
+    background-size: 9.9em;
+    transition: all .3s;
+}
+.sll {
+     z-index: 1;
+    opacity: 0;
+    left: calc(50% - 14em);
+    width: 45em;
+    height: 30em;
+    position: absolute;
+    transition: all .5s;
+    top: calc(50% - 15em);
+    background: rgba(16, 16, 16, 0.4);
+    transition: all .5s;
+    float: left;
+}
+.sll p {
+    text-align: center;
+    font-size: 1.5em;
+}
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+a:hover {
+    color: #b94848;
+}
+.sss {
+    float: left;
+    margin-left: 1em;
+    display: block;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: solid 2px #fff;
+    margin-right: 1em;
+}
+#sss1 {
+    background: url(22.jpg);
+    background-size: contain;
+}
+#sss2 {
+    background: url(33.jpg);
+    background-size: contain;
+}
+#sss3 {
+    background: url(44.jpg);
+    background-size: contain;
+}
+.sls {
+    display: block;
+    width: 20em;
+    height: 1em;
+    float: left;
+    text-align: left;
+}
+.uuu {
+    margin-top: .5em;
+    text-decoration: none;
+    font-size: .7em;
+    width: 20em;
+    height: 1em;
+    float: left;
+    text-align: left;
+}
+.uuu:hover {
+    color: #fff;
+    cursor: default;
+}
+
+.uu1 {
+    border-bottom: solid 2px #fff;
+    height: 3.4em;
+}
+
+@media screen and (min-width: 20px) and (max-width: 1000px)  {
+    #block {
+        width: 100%;
+        margin: 0;
+        left: 0;
+    }
+    .sll {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: url(3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #mobile {
+        display: block!important;
+    }
+    .sss {
+        padding: 0;
+        margin: 0;
+    }
+    .sls {
+        width: auto;
+    }
+        body {
+        zoom: 140%;
+        background: url(6.jpg);
+        background-position: 0 80%;
+        background-size: cover;
+    }
+    
+}
+#mobile {
+    display: none;
+    background: url(23.png);
+    background-size: cover;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    z-index: 100;
+    
+}
